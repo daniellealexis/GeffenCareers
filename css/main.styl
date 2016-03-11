@@ -1,0 +1,100 @@
+@import "reset.css"
+@import "variables"
+
+html
+body
+	font-size 16px
+	background-color #fff
+	color $fontColor
+
+h1
+	font-size 1.5rem
+	text-transform uppercase
+	letter-spacing 2px
+	font-family $font
+	text-align left
+	margin-bottom 2rem
+
+h2
+	font-size 1rem
+	font-family $fontLightItalic
+	letter-spacing 1.2px
+	line-height 1.5
+
+p
+	color $fontColor
+	font-size 1rem
+	font-family $fontLight
+	letter-spacing 1px
+	line-height 1.5
+
+.red
+	color $red
+.blue
+	color $blue
+.purple
+	color $purple
+.orange
+	color $orange
+.green
+	color $green
+
+.content-wrap
+	max-width 920px
+	margin auto
+
+.section
+	padding 6rem 1rem 0
+
+.inner-content
+	padding 0 1rem 0
+
+
+.cover-section
+	height 100vh
+	width 100%
+	border 1.25rem solid $red
+	text-align center
+
+	&:before
+		content ''
+		display inline-block
+		height 100%
+		vertical-align middle
+		margin-right -0.25em
+
+.cover-content
+	display inline-block
+	vertical-align middle
+	max-width 485px
+
+
+ol
+	font-family $fontLightItalic
+	counter-reset numberedList
+
+	li
+		line-height 1.5
+		letter-spacing 1.5px
+		margin-bottom 1rem
+
+		&:before
+			counter-increment numberedList
+			content counter(numberedList)"."
+			font-weight bold
+			font-family $font
+			padding-right 0.5rem
+
+		&:last-child
+			margin-bottom 0
+
+.seperator
+	padding 2rem 0
+
+	&:after
+		content ''
+		display block
+		width 6rem
+		height 0.25rem
+		margin auto
+		background-color $purple
