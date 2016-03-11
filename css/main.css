@@ -41,23 +41,23 @@ p {
 .green {
   color: #a1cc3a;
 }
+section {
+  padding: 6rem 1rem 0;
+}
 .content-wrap {
   max-width: 920px;
   margin: auto;
 }
-.section {
-  padding: 6rem 1rem 0;
-}
 .inner-content {
   padding: 0 1rem 0;
 }
-.cover-section {
+.cover {
   height: 100vh;
   width: 100%;
   border: 1.25rem solid #e94c38;
   text-align: center;
 }
-.cover-section:before {
+.cover:before {
   content: '';
   display: inline-block;
   height: 100%;
