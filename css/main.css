@@ -19,12 +19,21 @@ h2 {
   letter-spacing: 1.2px;
   line-height: 1.5;
 }
+h5 {
+  font-size: 0.75rem;
+  font-family: 'Muli-LightItalic', serif;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+}
 p {
   color: #333;
   font-size: 1rem;
   font-family: 'Muli-Light', serif;
   letter-spacing: 1px;
   line-height: 1.5;
+}
+img {
+  width: 100%;
 }
 .red {
   color: #e94c38;
@@ -73,7 +82,6 @@ section {
 .cover-logo {
   margin-bottom: 1rem;
   max-width: 320px;
-  width: 100%;
 }
 .cover-nav-wrap {
   position: relative;
@@ -85,7 +93,7 @@ section {
 .nav-links {
   text-transform: uppercase;
   display: inline-block;
-  font-family: Muli;
+  font-family: 'Muli', serif;
   letter-spacing: 2px;
   font-size: 1rem;
   color: #000;
@@ -118,6 +126,35 @@ ol li:before {
 ol li:last-child {
   margin-bottom: 0;
 }
+ol.five-steps li {
+  width: 19%;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+ol.five-steps .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+}
+ol.five-steps .description {
+  font-size: 0.75rem;
+  font-family: 'Muli', serif;
+}
+.five-image-wrap {
+  max-width: 250px;
+  text-align: center;
+  margin: 3rem auto 0;
+}
+.five-image-wrap img {
+  width: 80%;
+  margin-top: 1rem;
+}
+.profile-image {
+  float: left;
+  padding: 0 1rem 1rem 0;
+  max-width: 220px;
+}
 .seperator {
   padding: 2rem 0;
 }
@@ -128,4 +165,35 @@ ol li:last-child {
   height: 0.25rem;
   margin: auto;
   background-color: #7961ab;
+}
+section.button-wrap {
+  padding: 4rem 0 5rem;
+  text-align: center;
+  border-bottom: 1.5rem solid #e94c38;
+}
+.button {
+  display: inline-block;
+  background-color: #20bdbe;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 5px;
+  font-family: Muli;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.button:hover {
+  background-color: #2ddbdc;
+}
+.button:active {
+  background-color: #46dfe0;
 }

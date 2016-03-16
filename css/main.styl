@@ -21,12 +21,21 @@ h2
 	letter-spacing 1.2px
 	line-height 1.5
 
+h5
+	font-size 0.75rem
+	font-family $fontLightItalic
+	letter-spacing 1.2px
+	line-height 1.5
+
 p
 	color $fontColor
 	font-size 1rem
 	font-family $fontLight
 	letter-spacing 1px
 	line-height 1.5
+
+img
+	width 100%
 
 .red
 	color $red
@@ -71,7 +80,6 @@ section
 .cover-logo
 	margin-bottom 1rem
 	max-width 320px
-	width 100%
 
 .cover-nav-wrap
 	position relative
@@ -84,10 +92,10 @@ section
 .nav-links
 	text-transform uppercase
 	display inline-block
-	font-family Muli
+	font-family $font
 	letter-spacing 2px
 	font-size 1rem
-	color #000000
+	color $darkerFont
 
 	h4
 		display inline-block
@@ -117,6 +125,37 @@ ol
 		&:last-child
 			margin-bottom 0
 
+	&.five-steps
+
+		li
+			width 19%
+			display inline-block
+			padding 0.5rem
+			font-size 0.875rem
+
+		.title
+			font-weight 800
+			text-transform uppercase
+			color $darkerFont
+
+		.description
+			font-size 0.75rem
+			font-family $font
+
+.five-image-wrap
+	max-width 250px
+	text-align center
+	margin 3rem auto 0
+
+	img
+		width 80%
+		margin-top 1rem
+
+.profile-image
+	float left
+	padding 0 1rem 1rem 0
+	max-width 220px
+
 .seperator
 	padding 2rem 0
 
@@ -127,3 +166,29 @@ ol
 		height 0.25rem
 		margin auto
 		background-color $purple
+
+section.button-wrap
+	padding 4rem 0 5rem
+	text-align center
+	border-bottom 1.5rem solid $red
+
+.button
+	display inline-block
+	background-color $blue
+	padding 1rem 1.5rem
+	color #fff
+	text-transform uppercase
+	line-height 1
+	border-radius 5px
+	font-family Muli
+	letter-spacing 2px
+	font-size 0.875rem
+	cursor pointer
+	transition background-color 0.15s
+	no-select()
+
+	&:hover
+		background-color lighten($blue, 15%)
+
+	&:active
+		background-color lighten($blue, 25%)
