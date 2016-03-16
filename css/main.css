@@ -56,6 +56,7 @@ section {
   width: 100%;
   border: 1.25rem solid #e94c38;
   text-align: center;
+  padding: 2rem;
 }
 .cover:before {
   content: '';
@@ -68,6 +69,35 @@ section {
   display: inline-block;
   vertical-align: middle;
   max-width: 485px;
+}
+.cover-logo {
+  margin-bottom: 1rem;
+  max-width: 320px;
+  width: 100%;
+}
+.cover-nav-wrap {
+  position: relative;
+  top: 3rem;
+  text-align: right;
+  height: 0px;
+  padding-right: 2rem;
+}
+.nav-links {
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: Muli;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #000;
+}
+.nav-links h4 {
+  display: inline-block;
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+.nav-links h4 a {
+  text-decoration: none;
+  color: inherit;
 }
 ol {
   font-family: 'Muli-LightItalic', serif;
