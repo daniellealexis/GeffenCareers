@@ -21,9 +21,20 @@ $orange = #F6862A
 //Mixins
 
 no-select()
-    -webkit-touch-callout none
-    -webkit-user-select none
-    -khtml-user-select none
-    -moz-user-select none
-    -ms-user-select none
-    user-select none
+	-webkit-touch-callout none
+	-webkit-user-select none
+	-khtml-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
+
+flex()
+	display -webkit-flex
+	display -ms-flexbox
+	display flex
+
+flexwrap()
+	flex()
+	-webkit-flex-wrap wrap
+	-ms-flex-wrap wrap
+	flex-wrap wrap
